@@ -16,18 +16,22 @@ const App = () => {
                 />
             </ApprovalCard>
 
-            <CommentDetail
-                author="Jane"
-                timeAgo="Today at 2:00AM"
-                imageURL={faker.image.avatar()} text="second text here"
-            />
-            <CommentDetail
-                author="Alex"
-                timeAgo="Yesterday at 5:00PM"
-                imageURL={faker.image.avatar()}
-                text="third text here"
-            />
-        </div>
+            <ApprovalCard>
+                <CommentDetail
+                    author="Jane"
+                    timeAgo="Today at 2:00AM"
+                    imageURL={faker.image.avatar()} text="second text here"
+                />
+            </ApprovalCard>
+            <ApprovalCard>
+                <CommentDetail
+                    author="Alex"
+                    timeAgo="Yesterday at 5:00PM"
+                    imageURL={faker.image.avatar()}
+                    text="third text here"
+                />
+            </ApprovalCard>
+        </div >
     );
 };
 
